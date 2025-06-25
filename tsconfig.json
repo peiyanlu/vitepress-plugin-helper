@@ -6,12 +6,12 @@
     "lib": ["ESNext", "DOM"],
     "moduleResolution": "Node",
     "strict": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
     "noEmit": false,
-    "outDir": "./lib",
+    "outDir": "dist",
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noImplicitReturns": false,
@@ -20,10 +20,9 @@
     "declaration": true
   },
   "include": [
-    "./src",
-    "rollup.config.ts"
+    "src"
   ],
   "exclude": [
-    "./lib"
+    "dist"
   ]
 }
