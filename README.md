@@ -1,6 +1,13 @@
 # vitepress-plugin-helper
 
 
+<p>
+  <a href="https://www.npmjs.com/package/vitepress-plugin-helper" target="_blank"><img src="https://img.shields.io/npm/v/vitepress-plugin-helper.svg" alt="NPM Version" /></a>
+  <a href="https://www.npmjs.com/package/vitepress-plugin-helper" target="_blank"><img src="https://img.shields.io/npm/l/vitepress-plugin-helper.svg" alt="Package License" /></a>
+  <a href="https://www.npmjs.com/package/vitepress-plugin-helper" target="_blank"><img src="https://img.shields.io/npm/dm/vitepress-plugin-helper.svg" alt="NPM Downloads" /></a>
+</p>
+
+
 一个 VitePress 插件，可以通过特定目录结构自动生成 `nav` 和 `sidebar`，并监听 `MarkDown` 文件更改自动重新生成菜单。通过 `fast-glob` 实现。
 
 
@@ -13,7 +20,7 @@ npm install vitepress-plugin-helper -D
 ## 用法
 
 ```ts
-import { DefaultTheme, defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress'
 import { vitePressHelperPlugin } from 'vitepress-plugin-helper'
 import { getNav, getSidebar } from './menu'
 
