@@ -2,41 +2,30 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    "config:recommended"
+    "schedule:weekly",
+    "group:allNonMajor"
   ],
   "automergeType": "pr",
+  "automergeStrategy": "rebase",
   "timezone": "Asia/Shanghai",
-  "lockFileMaintenance": {
-    "enabled": false
-  },
+  "labels": [
+    "dependencies"
+  ],
   "ignorePaths": [
+    "**/test/**",
     "**/*-lock.yaml",
     "**/*-lock.json"
   ],
+  "prConcurrentLimit": 10,
+  "prHourlyLimit": 5,
+  "rangeStrategy": "bump",
   "packageRules": [
     {
       "matchDepTypes": [
-        "dependencies",
-        "devDependencies"
+        "peerDependencies"
       ],
-      "matchUpdateTypes": [
-        "patch",
-        "minor",
-        "bump"
-      ],
-      "groupName": "allDependencies",
-      "automerge": true
-    },
-    {
-      "matchDepTypes": [
-        "dependencies",
-        "devDependencies"
-      ],
-      "matchUpdateTypes": [
-        "major"
-      ],
-      "groupName": "allDependencies major",
-      "automerge": false
+      "enabled": false
     }
-  ]
+  ],
+  "ignoreDeps": [],
 }
