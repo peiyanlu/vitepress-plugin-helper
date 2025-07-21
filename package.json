@@ -27,13 +27,13 @@
     "gray-matter": "^4.0.3"
   },
   "devDependencies": {
-    "@types/node": "^22.15.17",
+    "@types/node": "^22.16.5",
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
-    "vitepress": "^2.0.0-alpha.7",
+    "vitepress": "^2.0.0-alpha.8",
     "@release-it/conventional-changelog": "^10.0.1",
-    "release-it-pnpm": "^4.6.5",
-    "release-it": "^19.0.2"
+    "release-it-pnpm": "^4.6.6",
+    "release-it": "^19.0.4"
   },
   "repository": {
     "type": "git",
