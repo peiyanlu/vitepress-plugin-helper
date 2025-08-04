@@ -31,7 +31,7 @@
     {
       "matchUpdateTypes": ["major"],
       "labels": ["major"],
-      "enabled": false
+      "automerge": false
     }
   ],
   "ignoreDeps": []
