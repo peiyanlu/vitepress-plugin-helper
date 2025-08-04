@@ -3,7 +3,7 @@ name: No-Op CI
 on:
   pull_request:
     branches:
-      - dev
+      - master
 
 jobs:
   noop:
