@@ -5,12 +5,11 @@
     "schedule:weekly",
     "group:allNonMajor"
   ],
+  "automerge": true,
   "automergeType": "pr",
   "automergeStrategy": "rebase",
   "timezone": "Asia/Shanghai",
-  "labels": [
-    "dependencies"
-  ],
+  "labels": ["dependencies"],
   "ignorePaths": [
     "**/test/**",
     "**/*-lock.yaml",
@@ -21,9 +20,17 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
-      "matchDepTypes": [
-        "peerDependencies"
-      ],
+      "matchDepTypes": ["devDependencies"],
+      "labels": ["devDeps"]
+    },
+    {
+      "matchDepTypes": ["peerDependencies"],
+      "labels": ["peerDeps"],
+      "enabled": false
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "labels": ["major"],
       "enabled": false
     }
   ],

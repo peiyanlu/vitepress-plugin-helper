@@ -4,13 +4,16 @@
     "preRelease": true,
     "release": true
   },
+  "npm": {
+    "publish": true
+  },
   "git": {
     "commit": true,
     "tag": true,
     "push": true,
     "requireCleanWorkingDir": true,
     "commitMessage": "chore(release): v${version}",
-    "tagName": "v${version}"
+    "tagName": "${version}"
   },
   "hooks": {
     "before:release": "pnpm run build",
