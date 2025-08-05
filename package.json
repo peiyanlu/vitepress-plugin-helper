@@ -20,20 +20,23 @@
     "dev": "tsc --watch",
     "build": "tsc",
     "prepublish": "tsc",
-    "release": "release-it"
+    "release": "release-it",
+    "sync:vite": "node scripts/sync-vite-version.js"
   },
   "dependencies": {
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3"
   },
   "devDependencies": {
-    "@types/node": "^22.17.0",
-    "typescript": "^5.9.2",
-    "vite": "^7.0.6",
-    "vitepress": "^2.0.0-alpha.9",
     "@release-it/conventional-changelog": "^10.0.1",
+    "@types/node": "^22.17.0",
+    "release-it": "^19.0.4",
     "release-it-pnpm": "^4.6.6",
-    "release-it": "^19.0.4"
+    "typescript": "^5.9.2",
+    "vitepress": "^2.0.0-alpha.9"
+  },
+  "peerDependencies": {
+    "vite": "^7.0.6"
   },
   "repository": {
     "type": "git",
@@ -58,5 +61,8 @@
     "sidebar",
     "nav",
     "auto"
-  ]
+  ],
+  "pnpm": {
+    "neverBuiltDependencies": []
+  }
 }

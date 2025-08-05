@@ -2,7 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    "schedule:weekly",
     "group:allNonMajor"
   ],
   "automerge": true,
@@ -12,11 +11,10 @@
   "labels": ["dependencies"],
   "ignorePaths": [
     "**/test/**",
-    "**/*-lock.yaml",
-    "**/*-lock.json"
+    "**/*-lock.*"
   ],
-  "prConcurrentLimit": 10,
-  "prHourlyLimit": 5,
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
   "rangeStrategy": "bump",
   "packageRules": [
     {
@@ -25,13 +23,16 @@
     },
     {
       "matchDepTypes": ["peerDependencies"],
-      "labels": ["peerDeps"],
       "enabled": false
     },
     {
       "matchUpdateTypes": ["major"],
       "labels": ["major"],
       "automerge": false
+    },
+    {
+      "matchDepNames": [],
+      "enabled": false
     }
   ],
   "ignoreDeps": []
