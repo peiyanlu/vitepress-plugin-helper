@@ -34,8 +34,8 @@ importers:
         specifier: ^5.9.2
         version: 5.9.2
       vitepress:
-        specifier: ^2.0.0-alpha.10
-        version: 2.0.0-alpha.10(@types/node@22.17.1)(jiti@2.4.2)(postcss@8.5.6)(typescript@5.9.2)(yaml@2.8.0)
+        specifier: ^2.0.0-alpha.11
+        version: 2.0.0-alpha.11(@types/node@22.17.1)(jiti@2.4.2)(postcss@8.5.6)(typescript@5.9.2)(yaml@2.8.0)
 
   packages/example:
     devDependencies:
@@ -2180,8 +2180,8 @@ packages:
       yaml:
         optional: true
 
-  vitepress@2.0.0-alpha.10:
-    resolution: {integrity: sha512-RqnglVOngEHB74pv4Ho/RqOPhqaxN8KBvZkdKFj2hfvrG30QXhQQ/5qk31uuTVuCG+2qXj/c4kpHCPEJKGQMDw==}
+  vitepress@2.0.0-alpha.11:
+    resolution: {integrity: sha512-l3FFkGtcB3u3iMlpnvkCR+MdOYqNaz2z+xPRlgZZnx8Xne4XLgQR0yfEfTqY/UyloTymXwxvRvu443Yo9Cr8pA==}
     hasBin: true
     peerDependencies:
       markdown-it-mathjax3: ^4
@@ -4304,7 +4304,7 @@ snapshots:
       jiti: 2.4.2
       yaml: 2.8.0
 
-  vitepress@2.0.0-alpha.10(@types/node@22.17.1)(jiti@2.4.2)(postcss@8.5.6)(typescript@5.9.2)(yaml@2.8.0):
+  vitepress@2.0.0-alpha.11(@types/node@22.17.1)(jiti@2.4.2)(postcss@8.5.6)(typescript@5.9.2)(yaml@2.8.0):
     dependencies:
       '@docsearch/css': 4.0.0-beta.6
       '@docsearch/js': 4.0.0-beta.6
