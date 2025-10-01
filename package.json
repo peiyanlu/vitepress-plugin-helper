@@ -29,10 +29,10 @@
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^10.0.1",
-    "@types/node": "^22.18.7",
+    "@types/node": "^22.18.8",
     "release-it": "^19.0.5",
     "release-it-pnpm": "^4.6.6",
-    "typescript": "^5.9.2",
+    "typescript": "^5.9.3",
     "vitepress": "^2.0.0-alpha.12"
   },
   "peerDependencies": {
