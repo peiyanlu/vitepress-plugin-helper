@@ -28,12 +28,12 @@
     "gray-matter": "^4.0.3"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^10.0.1",
-    "@types/node": "^22.19.0",
+    "@release-it/conventional-changelog": "^10.0.2",
+    "@types/node": "^22.19.1",
     "release-it": "^19.0.6",
     "release-it-pnpm": "^4.6.6",
     "typescript": "^5.9.3",
-    "vitepress": "^2.0.0-alpha.12"
+    "vitepress": "^2.0.0-alpha.13"
   },
   "peerDependencies": {
     "vite": "^7.0.6"
