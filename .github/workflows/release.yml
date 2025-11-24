@@ -21,19 +21,19 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 2
       
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 22.21.1
+          node-version: 24
       
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10.23.0
+          version: 10
       
       - name: Detect VitePress version change
         id: check
@@ -49,13 +49,6 @@ jobs:
           else
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
-      
-      - name: Install dependencies
-        run: pnpm install
-      
-      - name: Sync vite version
-        if: steps.check.outputs.changed == 'true'
-        run: pnpm sync:vite
   
   release:
     name: Release NPM Package
@@ -65,21 +58,21 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           fetch-tags: true
       
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 22.21.1
+          node-version: 24
           registry-url: 'https://registry.npmjs.org/'
       
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10.23.0
+          version: 10
       
       - name: Set Git Identity
         run: |
@@ -88,6 +81,15 @@ jobs:
       
       - name: Install dependencies
         run: pnpm install
+      
+      - name: Sync vite version
+        run: pnpm sync:vite
+      
+      - name: Commit updated package.json
+        run: |
+          git add package.json pnpm-lock.yaml
+          git commit -m "chore: sync vite version with vitepress" || echo "No changes"
+          git push
       
       - name: Build project
         run: pnpm build
