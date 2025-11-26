@@ -1,0 +1,12 @@
+name: No-Op CI
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "✅ This check always succeeds"
