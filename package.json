@@ -28,9 +28,9 @@
     "gray-matter": "^4.0.3"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^10.0.2",
-    "@types/node": "^22.19.1",
-    "release-it": "^19.0.6",
+    "@release-it/conventional-changelog": "^10.0.3",
+    "@types/node": "^22.19.3",
+    "release-it": "^19.1.0",
     "release-it-pnpm": "^4.6.6",
     "typescript": "^5.9.3",
     "vitepress": "^2.0.0-alpha.15"
