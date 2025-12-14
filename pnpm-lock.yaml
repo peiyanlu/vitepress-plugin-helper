@@ -16,26 +16,26 @@ importers:
         version: 4.0.3
       vite:
         specifier: ^7.2.2
-        version: 7.2.2(@types/node@22.19.1)(jiti@2.6.1)(yaml@2.8.0)
+        version: 7.2.2(@types/node@22.19.3)(jiti@2.6.1)(yaml@2.8.0)
     devDependencies:
       '@release-it/conventional-changelog':
-        specifier: ^10.0.2
-        version: 10.0.2(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)(release-it@19.0.6(@types/node@22.19.1))
+        specifier: ^10.0.3
+        version: 10.0.3(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)(release-it@19.1.0(@types/node@22.19.3))
       '@types/node':
-        specifier: ^22.19.1
-        version: 22.19.1
+        specifier: ^22.19.3
+        version: 22.19.3
       release-it:
-        specifier: ^19.0.6
-        version: 19.0.6(@types/node@22.19.1)
+        specifier: ^19.1.0
+        version: 19.1.0(@types/node@22.19.3)
       release-it-pnpm:
         specifier: ^4.6.6
-        version: 4.6.6(release-it@19.0.6(@types/node@22.19.1))
+        version: 4.6.6(release-it@19.1.0(@types/node@22.19.3))
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
       vitepress:
         specifier: ^2.0.0-alpha.15
-        version: 2.0.0-alpha.15(@types/node@22.19.1)(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)(yaml@2.8.0)
+        version: 2.0.0-alpha.15(@types/node@22.19.3)(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)(yaml@2.8.0)
 
   packages/example:
     devDependencies:
@@ -477,8 +477,8 @@ packages:
     resolution: {integrity: sha512-oeQJs1aa8Ghke8JIK9yuq/+KjMiaYeDZ38jx7MhkXncXlUKjqQ3wEm2X3qCKyjo+ZZofZj+WsEEiqkTtRuE2xQ==}
     engines: {node: ^20.9.0 || >=22.0.0, npm: '>=10.8.2'}
 
-  '@release-it/conventional-changelog@10.0.2':
-    resolution: {integrity: sha512-Ny+IK4LAwybv5zJrPbOd1Vz1eChk2TIlD5owahmPonqw+LghdLhXrPPGSfzY5XSBqTgUE/6DBlRRpgPK6yk/GQ==}
+  '@release-it/conventional-changelog@10.0.3':
+    resolution: {integrity: sha512-/aMwawGmepjPSFtbbIZNdjzkcbAegU+cR3eGgYSYBSHRhmIsxOtz187BreqMZDsYB7P05BCty8vqG381DV7bMA==}
     engines: {node: ^20.12.0 || >=22.0.0}
     peerDependencies:
       release-it: ^18.0.0 || ^19.0.0
@@ -646,8 +646,8 @@ packages:
   '@types/mdurl@2.0.0':
     resolution: {integrity: sha512-RGdgjQUZba5p6QEFAVx2OGb8rQDL/cPRG7GiedRzMcJ1tYnUANBncjbSB1NRGwbvjcPeikRABz2nshyPk1bhWg==}
 
-  '@types/node@22.19.1':
-    resolution: {integrity: sha512-LCCV0HdSZZZb34qifBsyWlUmok6W7ouER+oQIGBScS8EsZsQbrtFTUrDX4hOl+CS6p7cnNC4td+qrSVGSCTUfQ==}
+  '@types/node@22.19.3':
+    resolution: {integrity: sha512-1N9SBnWYOJTrNZCdh/yJE+t910Y128BoyY+zBLWhL3r0TYzlTmFdXrPwHL9DyFZmlEXNQQolTZh3KHV31QDhyA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -877,14 +877,6 @@ packages:
       magicast:
         optional: true
 
-  c12@3.3.0:
-    resolution: {integrity: sha512-K9ZkuyeJQeqLEyqldbYLG3wjqwpw4BVaAqvmxq3GYKK0b1A/yYQdIcJxkzAOWcNVWhJpRXAPfZFueekiY/L8Dw==}
-    peerDependencies:
-      magicast: ^0.3.5
-    peerDependenciesMeta:
-      magicast:
-        optional: true
-
   c12@3.3.1:
     resolution: {integrity: sha512-LcWQ01LT9tkoUINHgpIOv3mMs+Abv7oVCrtpMRi1PaapVEpWoMga5WuT7/DqFTu7URP9ftbOmimNw1KNIGh9DQ==}
     peerDependencies:
@@ -1085,10 +1077,6 @@ packages:
 
   dotenv@16.6.1:
     resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
-    engines: {node: '>=12'}
-
-  dotenv@17.2.2:
-    resolution: {integrity: sha512-Sf2LSQP+bOlhKWWyhFsn0UsfdK/kCWRv1iuA2gXAwt3dyNabr6QSj00I2V10pidqz69soatm9ZwZvpQMTIOd5Q==}
     engines: {node: '>=12'}
 
   dotenv@17.2.3:
@@ -1369,10 +1357,6 @@ packages:
 
   jiti@1.21.7:
     resolution: {integrity: sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A==}
-    hasBin: true
-
-  jiti@2.5.1:
-    resolution: {integrity: sha512-twQoecYPiVA5K/h6SxtORw/Bs3ar+mLUtoPSc7iMXzQzK8d7eJ/R09wmTwAjiamETn1cXYPGfNnu7DMoHgu12w==}
     hasBin: true
 
   jiti@2.6.1:
@@ -1719,8 +1703,8 @@ packages:
     peerDependencies:
       release-it: ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  release-it@19.0.6:
-    resolution: {integrity: sha512-XTCNZ2mV9wjASQmc2bcQjA+ImJiFMijbFSyQE6lDmP1Plq17acjYaoY5FmJb5Lh/Nv4UDwfRlKQMv1DvHFKf1g==}
+  release-it@19.1.0:
+    resolution: {integrity: sha512-XgAIZVKgHgOBUUoLFrUfXHG4cUDiXPWFW0AHIAgk17Tk9JbIjz9YyAU8MyQer7dWkfG5IpNU9QH8tViQZGfhaw==}
     engines: {node: ^20.12.0 || >=22.0.0}
     hasBin: true
 
@@ -2215,128 +2199,128 @@ snapshots:
 
   '@inquirer/ansi@1.0.0': {}
 
-  '@inquirer/checkbox@4.2.4(@types/node@22.19.1)':
+  '@inquirer/checkbox@4.2.4(@types/node@22.19.3)':
     dependencies:
       '@inquirer/ansi': 1.0.0
-      '@inquirer/core': 10.2.2(@types/node@22.19.1)
+      '@inquirer/core': 10.2.2(@types/node@22.19.3)
       '@inquirer/figures': 1.0.13
-      '@inquirer/type': 3.0.8(@types/node@22.19.1)
+      '@inquirer/type': 3.0.8(@types/node@22.19.3)
       yoctocolors-cjs: 2.1.2
     optionalDependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
 
-  '@inquirer/confirm@5.1.18(@types/node@22.19.1)':
+  '@inquirer/confirm@5.1.18(@types/node@22.19.3)':
     dependencies:
-      '@inquirer/core': 10.2.2(@types/node@22.19.1)
-      '@inquirer/type': 3.0.8(@types/node@22.19.1)
+      '@inquirer/core': 10.2.2(@types/node@22.19.3)
+      '@inquirer/type': 3.0.8(@types/node@22.19.3)
     optionalDependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
 
-  '@inquirer/core@10.2.2(@types/node@22.19.1)':
+  '@inquirer/core@10.2.2(@types/node@22.19.3)':
     dependencies:
       '@inquirer/ansi': 1.0.0
       '@inquirer/figures': 1.0.13
-      '@inquirer/type': 3.0.8(@types/node@22.19.1)
+      '@inquirer/type': 3.0.8(@types/node@22.19.3)
       cli-width: 4.1.0
       mute-stream: 2.0.0
       signal-exit: 4.1.0
       wrap-ansi: 6.2.0
       yoctocolors-cjs: 2.1.2
     optionalDependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
 
-  '@inquirer/editor@4.2.20(@types/node@22.19.1)':
+  '@inquirer/editor@4.2.20(@types/node@22.19.3)':
     dependencies:
-      '@inquirer/core': 10.2.2(@types/node@22.19.1)
-      '@inquirer/external-editor': 1.0.2(@types/node@22.19.1)
-      '@inquirer/type': 3.0.8(@types/node@22.19.1)
+      '@inquirer/core': 10.2.2(@types/node@22.19.3)
+      '@inquirer/external-editor': 1.0.2(@types/node@22.19.3)
+      '@inquirer/type': 3.0.8(@types/node@22.19.3)
     optionalDependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
 
-  '@inquirer/expand@4.0.20(@types/node@22.19.1)':
+  '@inquirer/expand@4.0.20(@types/node@22.19.3)':
     dependencies:
-      '@inquirer/core': 10.2.2(@types/node@22.19.1)
-      '@inquirer/type': 3.0.8(@types/node@22.19.1)
+      '@inquirer/core': 10.2.2(@types/node@22.19.3)
+      '@inquirer/type': 3.0.8(@types/node@22.19.3)
       yoctocolors-cjs: 2.1.2
     optionalDependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
 
-  '@inquirer/external-editor@1.0.2(@types/node@22.19.1)':
+  '@inquirer/external-editor@1.0.2(@types/node@22.19.3)':
     dependencies:
       chardet: 2.1.0
       iconv-lite: 0.7.0
     optionalDependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
 
   '@inquirer/figures@1.0.13': {}
 
-  '@inquirer/input@4.2.4(@types/node@22.19.1)':
+  '@inquirer/input@4.2.4(@types/node@22.19.3)':
     dependencies:
-      '@inquirer/core': 10.2.2(@types/node@22.19.1)
-      '@inquirer/type': 3.0.8(@types/node@22.19.1)
+      '@inquirer/core': 10.2.2(@types/node@22.19.3)
+      '@inquirer/type': 3.0.8(@types/node@22.19.3)
     optionalDependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
 
-  '@inquirer/number@3.0.20(@types/node@22.19.1)':
+  '@inquirer/number@3.0.20(@types/node@22.19.3)':
     dependencies:
-      '@inquirer/core': 10.2.2(@types/node@22.19.1)
-      '@inquirer/type': 3.0.8(@types/node@22.19.1)
+      '@inquirer/core': 10.2.2(@types/node@22.19.3)
+      '@inquirer/type': 3.0.8(@types/node@22.19.3)
     optionalDependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
 
-  '@inquirer/password@4.0.20(@types/node@22.19.1)':
-    dependencies:
-      '@inquirer/ansi': 1.0.0
-      '@inquirer/core': 10.2.2(@types/node@22.19.1)
-      '@inquirer/type': 3.0.8(@types/node@22.19.1)
-    optionalDependencies:
-      '@types/node': 22.19.1
-
-  '@inquirer/prompts@7.8.6(@types/node@22.19.1)':
-    dependencies:
-      '@inquirer/checkbox': 4.2.4(@types/node@22.19.1)
-      '@inquirer/confirm': 5.1.18(@types/node@22.19.1)
-      '@inquirer/editor': 4.2.20(@types/node@22.19.1)
-      '@inquirer/expand': 4.0.20(@types/node@22.19.1)
-      '@inquirer/input': 4.2.4(@types/node@22.19.1)
-      '@inquirer/number': 3.0.20(@types/node@22.19.1)
-      '@inquirer/password': 4.0.20(@types/node@22.19.1)
-      '@inquirer/rawlist': 4.1.8(@types/node@22.19.1)
-      '@inquirer/search': 3.1.3(@types/node@22.19.1)
-      '@inquirer/select': 4.3.4(@types/node@22.19.1)
-    optionalDependencies:
-      '@types/node': 22.19.1
-
-  '@inquirer/rawlist@4.1.8(@types/node@22.19.1)':
-    dependencies:
-      '@inquirer/core': 10.2.2(@types/node@22.19.1)
-      '@inquirer/type': 3.0.8(@types/node@22.19.1)
-      yoctocolors-cjs: 2.1.2
-    optionalDependencies:
-      '@types/node': 22.19.1
-
-  '@inquirer/search@3.1.3(@types/node@22.19.1)':
-    dependencies:
-      '@inquirer/core': 10.2.2(@types/node@22.19.1)
-      '@inquirer/figures': 1.0.13
-      '@inquirer/type': 3.0.8(@types/node@22.19.1)
-      yoctocolors-cjs: 2.1.2
-    optionalDependencies:
-      '@types/node': 22.19.1
-
-  '@inquirer/select@4.3.4(@types/node@22.19.1)':
+  '@inquirer/password@4.0.20(@types/node@22.19.3)':
     dependencies:
       '@inquirer/ansi': 1.0.0
-      '@inquirer/core': 10.2.2(@types/node@22.19.1)
-      '@inquirer/figures': 1.0.13
-      '@inquirer/type': 3.0.8(@types/node@22.19.1)
+      '@inquirer/core': 10.2.2(@types/node@22.19.3)
+      '@inquirer/type': 3.0.8(@types/node@22.19.3)
+    optionalDependencies:
+      '@types/node': 22.19.3
+
+  '@inquirer/prompts@7.8.6(@types/node@22.19.3)':
+    dependencies:
+      '@inquirer/checkbox': 4.2.4(@types/node@22.19.3)
+      '@inquirer/confirm': 5.1.18(@types/node@22.19.3)
+      '@inquirer/editor': 4.2.20(@types/node@22.19.3)
+      '@inquirer/expand': 4.0.20(@types/node@22.19.3)
+      '@inquirer/input': 4.2.4(@types/node@22.19.3)
+      '@inquirer/number': 3.0.20(@types/node@22.19.3)
+      '@inquirer/password': 4.0.20(@types/node@22.19.3)
+      '@inquirer/rawlist': 4.1.8(@types/node@22.19.3)
+      '@inquirer/search': 3.1.3(@types/node@22.19.3)
+      '@inquirer/select': 4.3.4(@types/node@22.19.3)
+    optionalDependencies:
+      '@types/node': 22.19.3
+
+  '@inquirer/rawlist@4.1.8(@types/node@22.19.3)':
+    dependencies:
+      '@inquirer/core': 10.2.2(@types/node@22.19.3)
+      '@inquirer/type': 3.0.8(@types/node@22.19.3)
       yoctocolors-cjs: 2.1.2
     optionalDependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
 
-  '@inquirer/type@3.0.8(@types/node@22.19.1)':
+  '@inquirer/search@3.1.3(@types/node@22.19.3)':
+    dependencies:
+      '@inquirer/core': 10.2.2(@types/node@22.19.3)
+      '@inquirer/figures': 1.0.13
+      '@inquirer/type': 3.0.8(@types/node@22.19.3)
+      yoctocolors-cjs: 2.1.2
     optionalDependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
+
+  '@inquirer/select@4.3.4(@types/node@22.19.3)':
+    dependencies:
+      '@inquirer/ansi': 1.0.0
+      '@inquirer/core': 10.2.2(@types/node@22.19.3)
+      '@inquirer/figures': 1.0.13
+      '@inquirer/type': 3.0.8(@types/node@22.19.3)
+      yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.19.3
+
+  '@inquirer/type@3.0.8(@types/node@22.19.3)':
+    optionalDependencies:
+      '@types/node': 22.19.3
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
@@ -2426,7 +2410,7 @@ snapshots:
 
   '@phun-ky/typeof@2.0.3': {}
 
-  '@release-it/conventional-changelog@10.0.2(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)(release-it@19.0.6(@types/node@22.19.1))':
+  '@release-it/conventional-changelog@10.0.3(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)(release-it@19.1.0(@types/node@22.19.3))':
     dependencies:
       '@conventional-changelog/git-client': 2.5.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)
       concat-stream: 2.0.0
@@ -2434,7 +2418,7 @@ snapshots:
       conventional-changelog-angular: 8.1.0
       conventional-changelog-conventionalcommits: 9.1.0
       conventional-recommended-bump: 11.2.0
-      release-it: 19.0.6(@types/node@22.19.1)
+      release-it: 19.1.0(@types/node@22.19.3)
       semver: 7.7.3
     transitivePeerDependencies:
       - conventional-commits-filter
@@ -2545,11 +2529,11 @@ snapshots:
   '@simple-libs/child-process-utils@1.0.1':
     dependencies:
       '@simple-libs/stream-utils': 1.1.0
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
 
   '@simple-libs/stream-utils@1.1.0':
     dependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
@@ -2574,7 +2558,7 @@ snapshots:
 
   '@types/mdurl@2.0.0': {}
 
-  '@types/node@22.19.1':
+  '@types/node@22.19.3':
     dependencies:
       undici-types: 6.21.0
 
@@ -2590,10 +2574,10 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@vitejs/plugin-vue@6.0.1(vite@7.2.2(@types/node@22.19.1)(jiti@2.6.1)(yaml@2.8.0))(vue@3.5.24(typescript@5.9.3))':
+  '@vitejs/plugin-vue@6.0.1(vite@7.2.2(@types/node@22.19.3)(jiti@2.6.1)(yaml@2.8.0))(vue@3.5.24(typescript@5.9.3))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.29
-      vite: 7.2.2(@types/node@22.19.1)(jiti@2.6.1)(yaml@2.8.0)
+      vite: 7.2.2(@types/node@22.19.3)(jiti@2.6.1)(yaml@2.8.0)
       vue: 3.5.24(typescript@5.9.3)
 
   '@vue/compiler-core@3.5.24':
@@ -2796,12 +2780,12 @@ snapshots:
     dependencies:
       ansis: 4.1.0
       args-tokenizer: 0.3.0
-      c12: 3.3.0
+      c12: 3.3.1
       cac: 6.7.14
       escalade: 3.2.0
       jsonc-parser: 3.3.1
       package-manager-detector: 1.3.0
-      semver: 7.7.2
+      semver: 7.7.3
       tinyexec: 1.0.1
       tinyglobby: 0.2.15
       yaml: 2.8.0
@@ -2825,21 +2809,6 @@ snapshots:
       pathe: 1.1.2
       perfect-debounce: 1.0.0
       pkg-types: 1.3.1
-      rc9: 2.1.2
-
-  c12@3.3.0:
-    dependencies:
-      chokidar: 4.0.3
-      confbox: 0.2.2
-      defu: 6.1.4
-      dotenv: 17.2.2
-      exsolve: 1.0.7
-      giget: 2.0.0
-      jiti: 2.5.1
-      ohash: 2.0.11
-      pathe: 2.0.3
-      perfect-debounce: 2.0.0
-      pkg-types: 2.3.0
       rc9: 2.1.2
 
   c12@3.3.1:
@@ -2876,7 +2845,7 @@ snapshots:
       pathe: 1.1.2
       pkg-types: 1.3.1
       scule: 1.3.0
-      semver: 7.7.2
+      semver: 7.7.3
       std-env: 3.9.0
       yaml: 2.8.0
     transitivePeerDependencies:
@@ -2885,13 +2854,13 @@ snapshots:
   changelogithub@13.15.0:
     dependencies:
       ansis: 4.1.0
-      c12: 3.3.0
+      c12: 3.3.1
       cac: 6.7.14
       changelogen: 0.5.7
       convert-gitmoji: 0.1.5
       execa: 9.6.0
       ofetch: 1.4.1
-      semver: 7.7.2
+      semver: 7.7.3
     transitivePeerDependencies:
       - magicast
 
@@ -3059,8 +3028,6 @@ snapshots:
       is-obj: 2.0.0
 
   dotenv@16.6.1: {}
-
-  dotenv@17.2.2: {}
 
   dotenv@17.2.3: {}
 
@@ -3308,17 +3275,17 @@ snapshots:
 
   inherits@2.0.4: {}
 
-  inquirer@12.9.6(@types/node@22.19.1):
+  inquirer@12.9.6(@types/node@22.19.3):
     dependencies:
       '@inquirer/ansi': 1.0.0
-      '@inquirer/core': 10.2.2(@types/node@22.19.1)
-      '@inquirer/prompts': 7.8.6(@types/node@22.19.1)
-      '@inquirer/type': 3.0.8(@types/node@22.19.1)
+      '@inquirer/core': 10.2.2(@types/node@22.19.3)
+      '@inquirer/prompts': 7.8.6(@types/node@22.19.3)
+      '@inquirer/type': 3.0.8(@types/node@22.19.3)
       mute-stream: 2.0.0
       run-async: 4.0.6
       rxjs: 7.8.2
     optionalDependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
 
   ip-address@9.0.5:
     dependencies:
@@ -3380,8 +3347,6 @@ snapshots:
       lodash.uniqby: 4.7.0
 
   jiti@1.21.7: {}
-
-  jiti@2.5.1: {}
 
   jiti@2.6.1: {}
 
@@ -3726,19 +3691,19 @@ snapshots:
     dependencies:
       regex-utilities: 2.3.0
 
-  release-it-pnpm@4.6.6(release-it@19.0.6(@types/node@22.19.1)):
+  release-it-pnpm@4.6.6(release-it@19.1.0(@types/node@22.19.3)):
     dependencies:
       bumpp: 10.2.0
       changelogithub: 13.15.0
       conventional-changelog-conventionalcommits: 9.0.0
       conventional-recommended-bump: 11.2.0
       kolorist: 1.8.0
-      release-it: 19.0.6(@types/node@22.19.1)
+      release-it: 19.1.0(@types/node@22.19.3)
       semver: 7.7.2
     transitivePeerDependencies:
       - magicast
 
-  release-it@19.0.6(@types/node@22.19.1):
+  release-it@19.1.0(@types/node@22.19.3):
     dependencies:
       '@nodeutils/defaults-deep': 1.1.0
       '@octokit/rest': 22.0.0
@@ -3748,7 +3713,7 @@ snapshots:
       ci-info: 4.3.0
       eta: 4.0.1
       git-url-parse: 16.1.0
-      inquirer: 12.9.6(@types/node@22.19.1)
+      inquirer: 12.9.6(@types/node@22.19.3)
       issue-parser: 7.0.1
       lodash.merge: 4.6.2
       mime-types: 3.0.1
@@ -4023,7 +3988,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@7.2.2(@types/node@22.19.1)(jiti@2.6.1)(yaml@2.8.0):
+  vite@7.2.2(@types/node@22.19.3)(jiti@2.6.1)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.6
       fdir: 6.5.0(picomatch@4.0.3)
@@ -4032,12 +3997,12 @@ snapshots:
       rollup: 4.44.2
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 22.19.1
+      '@types/node': 22.19.3
       fsevents: 2.3.3
       jiti: 2.6.1
       yaml: 2.8.0
 
-  vitepress@2.0.0-alpha.15(@types/node@22.19.1)(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)(yaml@2.8.0):
+  vitepress@2.0.0-alpha.15(@types/node@22.19.3)(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)(yaml@2.8.0):
     dependencies:
       '@docsearch/css': 4.3.2
       '@docsearch/js': 4.3.2
@@ -4046,7 +4011,7 @@ snapshots:
       '@shikijs/transformers': 3.15.0
       '@shikijs/types': 3.15.0
       '@types/markdown-it': 14.1.2
-      '@vitejs/plugin-vue': 6.0.1(vite@7.2.2(@types/node@22.19.1)(jiti@2.6.1)(yaml@2.8.0))(vue@3.5.24(typescript@5.9.3))
+      '@vitejs/plugin-vue': 6.0.1(vite@7.2.2(@types/node@22.19.3)(jiti@2.6.1)(yaml@2.8.0))(vue@3.5.24(typescript@5.9.3))
       '@vue/devtools-api': 8.0.5
       '@vue/shared': 3.5.24
       '@vueuse/core': 14.0.0(vue@3.5.24(typescript@5.9.3))
@@ -4055,7 +4020,7 @@ snapshots:
       mark.js: 8.11.1
       minisearch: 7.2.0
       shiki: 3.15.0
-      vite: 7.2.2(@types/node@22.19.1)(jiti@2.6.1)(yaml@2.8.0)
+      vite: 7.2.2(@types/node@22.19.3)(jiti@2.6.1)(yaml@2.8.0)
       vue: 3.5.24(typescript@5.9.3)
     optionalDependencies:
       postcss: 8.5.6
