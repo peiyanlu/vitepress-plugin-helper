@@ -28,7 +28,7 @@
     "gray-matter": "^4.0.3"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^10.0.3",
+    "@release-it/conventional-changelog": "^10.0.4",
     "@types/node": "^22.19.3",
     "release-it": "^19.1.0",
     "release-it-pnpm": "^4.6.6",
