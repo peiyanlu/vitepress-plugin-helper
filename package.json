@@ -30,7 +30,7 @@
   "devDependencies": {
     "@release-it/conventional-changelog": "^10.0.4",
     "@types/node": "^22.19.3",
-    "release-it": "^19.1.0",
+    "release-it": "^19.2.2",
     "release-it-pnpm": "^4.6.6",
     "typescript": "^5.9.3",
     "vitepress": "^2.0.0-alpha.15"
