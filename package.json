@@ -29,8 +29,8 @@
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^10.0.4",
-    "@types/node": "^22.19.3",
-    "release-it": "^19.2.2",
+    "@types/node": "^22.19.5",
+    "release-it": "^19.2.3",
     "release-it-pnpm": "^4.6.6",
     "typescript": "^5.9.3",
     "vitepress": "^2.0.0-alpha.15"
