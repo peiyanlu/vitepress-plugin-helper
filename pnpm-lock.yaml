@@ -19,8 +19,8 @@ importers:
         version: 7.3.1(@types/node@22.19.15)(jiti@2.6.1)(yaml@2.8.0)
     devDependencies:
       '@release-it/conventional-changelog':
-        specifier: ^10.0.5
-        version: 10.0.5(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)(release-it@19.2.4(@types/node@22.19.15))
+        specifier: ^10.0.6
+        version: 10.0.6(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)(release-it@19.2.4(@types/node@22.19.15))
       '@types/node':
         specifier: ^22.19.15
         version: 22.19.15
@@ -35,7 +35,7 @@ importers:
         version: 5.9.3
       vitepress:
         specifier: ^2.0.0-alpha.16
-        version: 2.0.0-alpha.16(@types/node@22.19.15)(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)(yaml@2.8.0)
+        version: 2.0.0-alpha.16(@types/node@22.19.15)(jiti@2.6.1)(postcss@8.5.8)(typescript@5.9.3)(yaml@2.8.0)
 
   packages/example:
     devDependencies:
@@ -43,8 +43,8 @@ importers:
         specifier: workspace:^
         version: link:../..
       vue:
-        specifier: ^3.5.29
-        version: 3.5.29(typescript@5.9.3)
+        specifier: ^3.5.30
+        version: 3.5.30(typescript@5.9.3)
 
   packages/example-root:
     devDependencies:
@@ -52,8 +52,8 @@ importers:
         specifier: workspace:^
         version: link:../..
       vue:
-        specifier: ^3.5.29
-        version: 3.5.29(typescript@5.9.3)
+        specifier: ^3.5.30
+        version: 3.5.30(typescript@5.9.3)
 
   packages/example-src:
     devDependencies:
@@ -61,8 +61,8 @@ importers:
         specifier: workspace:^
         version: link:../..
       vue:
-        specifier: ^3.5.29
-        version: 3.5.29(typescript@5.9.3)
+        specifier: ^3.5.30
+        version: 3.5.30(typescript@5.9.3)
 
 packages:
 
@@ -83,12 +83,12 @@ packages:
     resolution: {integrity: sha512-LwdZHpScM4Qz8Xw2iKSzS+cfglZzJGvofQICy7W7v4caru4EaAmyUuO6BGrbyQ2mYV11W0U8j5mBhd14dd3B0A==}
     engines: {node: '>=6.9.0'}
 
-  '@conventional-changelog/git-client@2.5.1':
-    resolution: {integrity: sha512-lAw7iA5oTPWOLjiweb7DlGEMDEvzqzLLa6aWOly2FSZ64IwLE8T458rC+o+WvI31Doz6joM7X2DoNog7mX8r4A==}
+  '@conventional-changelog/git-client@2.6.0':
+    resolution: {integrity: sha512-T+uPDciKf0/ioNNDpMGc8FDsehJClZP0yR3Q5MN6wE/Y/1QZ7F+80OgznnTCOlMEG4AV0LvH2UJi3C/nBnaBUg==}
     engines: {node: '>=18'}
     peerDependencies:
       conventional-commits-filter: ^5.0.0
-      conventional-commits-parser: ^6.1.0
+      conventional-commits-parser: ^6.3.0
     peerDependenciesMeta:
       conventional-commits-filter:
         optional: true
@@ -474,8 +474,8 @@ packages:
     resolution: {integrity: sha512-oeQJs1aa8Ghke8JIK9yuq/+KjMiaYeDZ38jx7MhkXncXlUKjqQ3wEm2X3qCKyjo+ZZofZj+WsEEiqkTtRuE2xQ==}
     engines: {node: ^20.9.0 || >=22.0.0, npm: '>=10.8.2'}
 
-  '@release-it/conventional-changelog@10.0.5':
-    resolution: {integrity: sha512-Dxul3YlUsDLbIg+aR6T0QR/VyKwuJNR3GZM8mKVEwFO8GpH2H5vgnN7kacEvq/Qk5puDadOVbhbUq/KBjraemQ==}
+  '@release-it/conventional-changelog@10.0.6':
+    resolution: {integrity: sha512-aUb0IkcsBTMcOH5PPQ9Jv9lEOOVu2+rSgkE1ny+dzsTziQm2BhDRAtaFK/dw/HflthuXMWrqhhyfJhAV1AOEPQ==}
     engines: {node: ^20.12.0 || >=22.0.0}
     peerDependencies:
       release-it: ^18.0.0 || ^19.0.0
@@ -625,8 +625,12 @@ packages:
     resolution: {integrity: sha512-3nWd8irxvDI6v856wpPCHZ+08iQR0oHTZfzAZmnbsLzf+Sf1odraP6uKOHDZToXq3RPRV/LbqGVlSCogm9cJjg==}
     engines: {node: '>=18'}
 
-  '@simple-libs/stream-utils@1.1.0':
-    resolution: {integrity: sha512-6rsHTjodIn/t90lv5snQjRPVtOosM7Vp0AKdrObymq45ojlgVwnpAqdc+0OBBrpEiy31zZ6/TKeIVqV1HwvnuQ==}
+  '@simple-libs/hosted-git-info@1.0.2':
+    resolution: {integrity: sha512-aAmGQdMH+ZinytKuA2832u0ATeOFNYNk4meBEXtB5xaPotUgggYNhq5tYU/v17wEbmTW5P9iHNqNrFyrhnqBAg==}
+    engines: {node: '>=18'}
+
+  '@simple-libs/stream-utils@1.2.0':
+    resolution: {integrity: sha512-KxXvfapcixpz6rVEB6HPjOUZT22yN6v0vI0urQSk1L8MlEWPDFCZkhw2xmkyoTGYeFw7tWTZd7e3lVzRZRN/EA==}
     engines: {node: '>=18'}
 
   '@sindresorhus/merge-streams@4.0.0':
@@ -683,26 +687,26 @@ packages:
   '@vue/compiler-core@3.5.27':
     resolution: {integrity: sha512-gnSBQjZA+//qDZen+6a2EdHqJ68Z7uybrMf3SPjEGgG4dicklwDVmMC1AeIHxtLVPT7sn6sH1KOO+tS6gwOUeQ==}
 
-  '@vue/compiler-core@3.5.29':
-    resolution: {integrity: sha512-cuzPhD8fwRHk8IGfmYaR4eEe4cAyJEL66Ove/WZL7yWNL134nqLddSLwNRIsFlnnW1kK+p8Ck3viFnC0chXCXw==}
+  '@vue/compiler-core@3.5.30':
+    resolution: {integrity: sha512-s3DfdZkcu/qExZ+td75015ljzHc6vE+30cFMGRPROYjqkroYI5NV2X1yAMX9UeyBNWB9MxCfPcsjpLS11nzkkw==}
 
   '@vue/compiler-dom@3.5.27':
     resolution: {integrity: sha512-oAFea8dZgCtVVVTEC7fv3T5CbZW9BxpFzGGxC79xakTr6ooeEqmRuvQydIiDAkglZEAd09LgVf1RoDnL54fu5w==}
 
-  '@vue/compiler-dom@3.5.29':
-    resolution: {integrity: sha512-n0G5o7R3uBVmVxjTIYcz7ovr8sy7QObFG8OQJ3xGCDNhbG60biP/P5KnyY8NLd81OuT1WJflG7N4KWYHaeeaIg==}
+  '@vue/compiler-dom@3.5.30':
+    resolution: {integrity: sha512-eCFYESUEVYHhiMuK4SQTldO3RYxyMR/UQL4KdGD1Yrkfdx4m/HYuZ9jSfPdA+nWJY34VWndiYdW/wZXyiPEB9g==}
 
   '@vue/compiler-sfc@3.5.27':
     resolution: {integrity: sha512-sHZu9QyDPeDmN/MRoshhggVOWE5WlGFStKFwu8G52swATgSny27hJRWteKDSUUzUH+wp+bmeNbhJnEAel/auUQ==}
 
-  '@vue/compiler-sfc@3.5.29':
-    resolution: {integrity: sha512-oJZhN5XJs35Gzr50E82jg2cYdZQ78wEwvRO6Y63TvLVTc+6xICzJHP1UIecdSPPYIbkautNBanDiWYa64QSFIA==}
+  '@vue/compiler-sfc@3.5.30':
+    resolution: {integrity: sha512-LqmFPDn89dtU9vI3wHJnwaV6GfTRD87AjWpTWpyrdVOObVtjIuSeZr181z5C4PmVx/V3j2p+0f7edFKGRMpQ5A==}
 
   '@vue/compiler-ssr@3.5.27':
     resolution: {integrity: sha512-Sj7h+JHt512fV1cTxKlYhg7qxBvack+BGncSpH+8vnN+KN95iPIcqB5rsbblX40XorP+ilO7VIKlkuu3Xq2vjw==}
 
-  '@vue/compiler-ssr@3.5.29':
-    resolution: {integrity: sha512-Y/ARJZE6fpjzL5GH/phJmsFwx3g6t2KmHKHx5q+MLl2kencADKIrhH5MLF6HHpRMmlRAYBRSvv347Mepf1zVNw==}
+  '@vue/compiler-ssr@3.5.30':
+    resolution: {integrity: sha512-NsYK6OMTnx109PSL2IAyf62JP6EUdk4Dmj6AkWcJGBvN0dQoMYtVekAmdqgTtWQgEJo+Okstbf/1p7qZr5H+bA==}
 
   '@vue/devtools-api@8.0.5':
     resolution: {integrity: sha512-DgVcW8H/Nral7LgZEecYFFYXnAvGuN9C3L3DtWekAncFBedBczpNW8iHKExfaM559Zm8wQWrwtYZ9lXthEHtDw==}
@@ -716,36 +720,36 @@ packages:
   '@vue/reactivity@3.5.27':
     resolution: {integrity: sha512-vvorxn2KXfJ0nBEnj4GYshSgsyMNFnIQah/wczXlsNXt+ijhugmW+PpJ2cNPe4V6jpnBcs0MhCODKllWG+nvoQ==}
 
-  '@vue/reactivity@3.5.29':
-    resolution: {integrity: sha512-zcrANcrRdcLtmGZETBxWqIkoQei8HaFpZWx/GHKxx79JZsiZ8j1du0VUJtu4eJjgFvU/iKL5lRXFXksVmI+5DA==}
+  '@vue/reactivity@3.5.30':
+    resolution: {integrity: sha512-179YNgKATuwj9gB+66snskRDOitDiuOZqkYia7mHKJaidOMo/WJxHKF8DuGc4V4XbYTJANlfEKb0yxTQotnx4Q==}
 
   '@vue/runtime-core@3.5.27':
     resolution: {integrity: sha512-fxVuX/fzgzeMPn/CLQecWeDIFNt3gQVhxM0rW02Tvp/YmZfXQgcTXlakq7IMutuZ/+Ogbn+K0oct9J3JZfyk3A==}
 
-  '@vue/runtime-core@3.5.29':
-    resolution: {integrity: sha512-8DpW2QfdwIWOLqtsNcds4s+QgwSaHSJY/SUe04LptianUQ/0xi6KVsu/pYVh+HO3NTVvVJjIPL2t6GdeKbS4Lg==}
+  '@vue/runtime-core@3.5.30':
+    resolution: {integrity: sha512-e0Z+8PQsUTdwV8TtEsLzUM7SzC7lQwYKePydb7K2ZnmS6jjND+WJXkmmfh/swYzRyfP1EY3fpdesyYoymCzYfg==}
 
   '@vue/runtime-dom@3.5.27':
     resolution: {integrity: sha512-/QnLslQgYqSJ5aUmb5F0z0caZPGHRB8LEAQ1s81vHFM5CBfnun63rxhvE/scVb/j3TbBuoZwkJyiLCkBluMpeg==}
 
-  '@vue/runtime-dom@3.5.29':
-    resolution: {integrity: sha512-AHvvJEtcY9tw/uk+s/YRLSlxxQnqnAkjqvK25ZiM4CllCZWzElRAoQnCM42m9AHRLNJ6oe2kC5DCgD4AUdlvXg==}
+  '@vue/runtime-dom@3.5.30':
+    resolution: {integrity: sha512-2UIGakjU4WSQ0T4iwDEW0W7vQj6n7AFn7taqZ9Cvm0Q/RA2FFOziLESrDL4GmtI1wV3jXg5nMoJSYO66egDUBw==}
 
   '@vue/server-renderer@3.5.27':
     resolution: {integrity: sha512-qOz/5thjeP1vAFc4+BY3Nr6wxyLhpeQgAE/8dDtKo6a6xdk+L4W46HDZgNmLOBUDEkFXV3G7pRiUqxjX0/2zWA==}
     peerDependencies:
       vue: 3.5.27
 
-  '@vue/server-renderer@3.5.29':
-    resolution: {integrity: sha512-G/1k6WK5MusLlbxSE2YTcqAAezS+VuwHhOvLx2KnQU7G2zCH6KIb+5Wyt6UjMq7a3qPzNEjJXs1hvAxDclQH+g==}
+  '@vue/server-renderer@3.5.30':
+    resolution: {integrity: sha512-v+R34icapydRwbZRD0sXwtHqrQJv38JuMB4JxbOxd8NEpGLny7cncMp53W9UH/zo4j8eDHjQ1dEJXwzFQknjtQ==}
     peerDependencies:
-      vue: 3.5.29
+      vue: 3.5.30
 
   '@vue/shared@3.5.27':
     resolution: {integrity: sha512-dXr/3CgqXsJkZ0n9F3I4elY8wM9jMJpP3pvRG52r6m0tu/MsAFIe6JpXVGeNMd/D9F4hQynWT8Rfuj0bdm9kFQ==}
 
-  '@vue/shared@3.5.29':
-    resolution: {integrity: sha512-w7SR0A5zyRByL9XUkCfdLs7t9XOHUyJ67qPGQjOou3p6GvBeBW+AVjUUmlxtZ4PIYaRvE+1LmK44O4uajlZwcg==}
+  '@vue/shared@3.5.30':
+    resolution: {integrity: sha512-YXgQ7JjaO18NeK2K9VTbDHaFy62WrObMa6XERNfNOkAhD1F1oDSf3ZJ7K6GqabZ0BvSDHajp8qfS5Sa2I9n8uQ==}
 
   '@vueuse/core@14.2.0':
     resolution: {integrity: sha512-tpjzVl7KCQNVd/qcaCE9XbejL38V6KJAEq/tVXj7mDPtl6JtzmUdnXelSS+ULRkkrDgzYVK7EerQJvd2jR794Q==}
@@ -984,29 +988,29 @@ packages:
     resolution: {integrity: sha512-5IKcdX0nnYavi6G7TtOhwkYzyjfJlatbjMjuLSfE2kYT5pMDOilZ4OvMhi637CcDICTmz3wARPoyhqyX1Y+XvA==}
     engines: {node: ^14.18.0 || >=16.10.0}
 
-  conventional-changelog-angular@8.1.0:
-    resolution: {integrity: sha512-GGf2Nipn1RUCAktxuVauVr1e3r8QrLP/B0lEUsFktmGqc3ddbQkhoJZHJctVU829U1c6mTSWftrVOCHaL85Q3w==}
+  conventional-changelog-angular@8.3.0:
+    resolution: {integrity: sha512-DOuBwYSqWzfwuRByY9O4oOIvDlkUCTDzfbOgcSbkY+imXXj+4tmrEFao3K+FxemClYfYnZzsvudbwrhje9VHDA==}
     engines: {node: '>=18'}
 
   conventional-changelog-conventionalcommits@9.0.0:
     resolution: {integrity: sha512-5e48V0+DsWvQBEnnbBFhYQwYDzFPXVrakGPP1uSxekDkr5d7YWrmaWsgJpKFR0SkXmxK6qQr9O42uuLb9wpKxA==}
     engines: {node: '>=18'}
 
-  conventional-changelog-conventionalcommits@9.1.0:
-    resolution: {integrity: sha512-MnbEysR8wWa8dAEvbj5xcBgJKQlX/m0lhS8DsyAAWDHdfs2faDJxTgzRYlRYpXSe7UiKrIIlB4TrBKU9q9DgkA==}
+  conventional-changelog-conventionalcommits@9.3.0:
+    resolution: {integrity: sha512-kYFx6gAyjSIMwNtASkI3ZE99U1fuVDJr0yTYgVy+I2QG46zNZfl2her+0+eoviG82c5WQvW1jMt1eOQTeJLodA==}
     engines: {node: '>=18'}
 
   conventional-changelog-preset-loader@5.0.0:
     resolution: {integrity: sha512-SetDSntXLk8Jh1NOAl1Gu5uLiCNSYenB5tm0YVeZKePRIgDW9lQImromTwLa3c/Gae298tsgOM+/CYT9XAl0NA==}
     engines: {node: '>=18'}
 
-  conventional-changelog-writer@8.2.0:
-    resolution: {integrity: sha512-Y2aW4596l9AEvFJRwFGJGiQjt2sBYTjPD18DdvxX9Vpz0Z7HQ+g1Z+6iYDAm1vR3QOJrDBkRHixHK/+FhkR6Pw==}
+  conventional-changelog-writer@8.4.0:
+    resolution: {integrity: sha512-HHBFkk1EECxxmCi4CTu091iuDpQv5/OavuCUAuZmrkWpmYfyD816nom1CvtfXJ/uYfAAjavgHvXHX291tSLK8g==}
     engines: {node: '>=18'}
     hasBin: true
 
-  conventional-changelog@7.1.1:
-    resolution: {integrity: sha512-rlqa8Lgh8YzT3Akruk05DR79j5gN9NCglHtJZwpi6vxVeaoagz+84UAtKQj/sT+RsfGaZkt3cdFCjcN6yjr5sw==}
+  conventional-changelog@7.2.0:
+    resolution: {integrity: sha512-BEdgG+vPl53EVlTTk9sZ96aagFp0AQ5pw/ggiQMy2SClLbTo1r0l+8dSg79gkLOO5DS1Lswuhp5fWn6RwE+ivg==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1016,6 +1020,11 @@ packages:
 
   conventional-commits-parser@6.2.0:
     resolution: {integrity: sha512-uLnoLeIW4XaoFtH37qEcg/SXMJmKF4vi7V0H2rnPueg+VEtFGA/asSCNTcq4M/GQ6QmlzchAEtOoDTtKqWeHag==}
+    engines: {node: '>=18'}
+    hasBin: true
+
+  conventional-commits-parser@6.3.0:
+    resolution: {integrity: sha512-RfOq/Cqy9xV9bOA8N+ZH6DlrDR+5S3Mi0B5kACEjESpE+AviIpAptx9a9cFpWCCvgRtWT+0BbUw+e1BZfts9jg==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1660,6 +1669,10 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postcss@8.5.8:
+    resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
+    engines: {node: ^10 || ^12 || >=14}
+
   pretty-ms@9.2.0:
     resolution: {integrity: sha512-4yf0QO/sllf/1zbZWYnvWw3NxCQwLXKzIj0G849LSufP15BXKM0rbD2Z3wVnkMfjdn/CB0Dpp444gYAACdsplg==}
     engines: {node: '>=18'}
@@ -1768,6 +1781,11 @@ packages:
 
   semver@7.7.3:
     resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  semver@7.7.4:
+    resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -2032,8 +2050,8 @@ packages:
       typescript:
         optional: true
 
-  vue@3.5.29:
-    resolution: {integrity: sha512-BZqN4Ze6mDQVNAni0IHeMJ5mwr8VAJ3MQC9FmprRhcBYENw+wOAAjRj8jfmN6FLl0j96OXbR+CjWhmAmM+QGnA==}
+  vue@3.5.30:
+    resolution: {integrity: sha512-hTHLc6VNZyzzEH/l7PFGjpcTvUgiaPK5mdLkbjrTeWSRcEfxFrv56g/XckIYlE9ckuobsdwqd5mk2g1sBkMewg==}
     peerDependencies:
       typescript: '*'
     peerDependenciesMeta:
@@ -2105,14 +2123,23 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@conventional-changelog/git-client@2.5.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)':
+  '@conventional-changelog/git-client@2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)':
     dependencies:
       '@simple-libs/child-process-utils': 1.0.1
-      '@simple-libs/stream-utils': 1.1.0
-      semver: 7.7.3
+      '@simple-libs/stream-utils': 1.2.0
+      semver: 7.7.4
     optionalDependencies:
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.2.0
+
+  '@conventional-changelog/git-client@2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)':
+    dependencies:
+      '@simple-libs/child-process-utils': 1.0.1
+      '@simple-libs/stream-utils': 1.2.0
+      semver: 7.7.4
+    optionalDependencies:
+      conventional-commits-filter: 5.0.0
+      conventional-commits-parser: 6.3.0
 
   '@docsearch/css@4.5.3': {}
 
@@ -2411,16 +2438,16 @@ snapshots:
 
   '@phun-ky/typeof@2.0.3': {}
 
-  '@release-it/conventional-changelog@10.0.5(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)(release-it@19.2.4(@types/node@22.19.15))':
+  '@release-it/conventional-changelog@10.0.6(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)(release-it@19.2.4(@types/node@22.19.15))':
     dependencies:
-      '@conventional-changelog/git-client': 2.5.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)
+      '@conventional-changelog/git-client': 2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)
       concat-stream: 2.0.0
-      conventional-changelog: 7.1.1(conventional-commits-filter@5.0.0)
-      conventional-changelog-angular: 8.1.0
-      conventional-changelog-conventionalcommits: 9.1.0
+      conventional-changelog: 7.2.0(conventional-commits-filter@5.0.0)
+      conventional-changelog-angular: 8.3.0
+      conventional-changelog-conventionalcommits: 9.3.0
       conventional-recommended-bump: 11.2.0
       release-it: 19.2.4(@types/node@22.19.15)
-      semver: 7.7.3
+      semver: 7.7.4
     transitivePeerDependencies:
       - conventional-commits-filter
       - conventional-commits-parser
@@ -2529,12 +2556,12 @@ snapshots:
 
   '@simple-libs/child-process-utils@1.0.1':
     dependencies:
-      '@simple-libs/stream-utils': 1.1.0
+      '@simple-libs/stream-utils': 1.2.0
       '@types/node': 22.19.15
 
-  '@simple-libs/stream-utils@1.1.0':
-    dependencies:
-      '@types/node': 22.19.15
+  '@simple-libs/hosted-git-info@1.0.2': {}
+
+  '@simple-libs/stream-utils@1.2.0': {}
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
@@ -2589,10 +2616,10 @@ snapshots:
       estree-walker: 2.0.2
       source-map-js: 1.2.1
 
-  '@vue/compiler-core@3.5.29':
+  '@vue/compiler-core@3.5.30':
     dependencies:
       '@babel/parser': 7.29.0
-      '@vue/shared': 3.5.29
+      '@vue/shared': 3.5.30
       entities: 7.0.1
       estree-walker: 2.0.2
       source-map-js: 1.2.1
@@ -2602,10 +2629,10 @@ snapshots:
       '@vue/compiler-core': 3.5.27
       '@vue/shared': 3.5.27
 
-  '@vue/compiler-dom@3.5.29':
+  '@vue/compiler-dom@3.5.30':
     dependencies:
-      '@vue/compiler-core': 3.5.29
-      '@vue/shared': 3.5.29
+      '@vue/compiler-core': 3.5.30
+      '@vue/shared': 3.5.30
 
   '@vue/compiler-sfc@3.5.27':
     dependencies:
@@ -2619,16 +2646,16 @@ snapshots:
       postcss: 8.5.6
       source-map-js: 1.2.1
 
-  '@vue/compiler-sfc@3.5.29':
+  '@vue/compiler-sfc@3.5.30':
     dependencies:
       '@babel/parser': 7.29.0
-      '@vue/compiler-core': 3.5.29
-      '@vue/compiler-dom': 3.5.29
-      '@vue/compiler-ssr': 3.5.29
-      '@vue/shared': 3.5.29
+      '@vue/compiler-core': 3.5.30
+      '@vue/compiler-dom': 3.5.30
+      '@vue/compiler-ssr': 3.5.30
+      '@vue/shared': 3.5.30
       estree-walker: 2.0.2
       magic-string: 0.30.21
-      postcss: 8.5.6
+      postcss: 8.5.8
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.5.27':
@@ -2636,10 +2663,10 @@ snapshots:
       '@vue/compiler-dom': 3.5.27
       '@vue/shared': 3.5.27
 
-  '@vue/compiler-ssr@3.5.29':
+  '@vue/compiler-ssr@3.5.30':
     dependencies:
-      '@vue/compiler-dom': 3.5.29
-      '@vue/shared': 3.5.29
+      '@vue/compiler-dom': 3.5.30
+      '@vue/shared': 3.5.30
 
   '@vue/devtools-api@8.0.5':
     dependencies:
@@ -2663,19 +2690,19 @@ snapshots:
     dependencies:
       '@vue/shared': 3.5.27
 
-  '@vue/reactivity@3.5.29':
+  '@vue/reactivity@3.5.30':
     dependencies:
-      '@vue/shared': 3.5.29
+      '@vue/shared': 3.5.30
 
   '@vue/runtime-core@3.5.27':
     dependencies:
       '@vue/reactivity': 3.5.27
       '@vue/shared': 3.5.27
 
-  '@vue/runtime-core@3.5.29':
+  '@vue/runtime-core@3.5.30':
     dependencies:
-      '@vue/reactivity': 3.5.29
-      '@vue/shared': 3.5.29
+      '@vue/reactivity': 3.5.30
+      '@vue/shared': 3.5.30
 
   '@vue/runtime-dom@3.5.27':
     dependencies:
@@ -2684,11 +2711,11 @@ snapshots:
       '@vue/shared': 3.5.27
       csstype: 3.2.3
 
-  '@vue/runtime-dom@3.5.29':
+  '@vue/runtime-dom@3.5.30':
     dependencies:
-      '@vue/reactivity': 3.5.29
-      '@vue/runtime-core': 3.5.29
-      '@vue/shared': 3.5.29
+      '@vue/reactivity': 3.5.30
+      '@vue/runtime-core': 3.5.30
+      '@vue/shared': 3.5.30
       csstype: 3.2.3
 
   '@vue/server-renderer@3.5.27(vue@3.5.27(typescript@5.9.3))':
@@ -2697,15 +2724,15 @@ snapshots:
       '@vue/shared': 3.5.27
       vue: 3.5.27(typescript@5.9.3)
 
-  '@vue/server-renderer@3.5.29(vue@3.5.29(typescript@5.9.3))':
+  '@vue/server-renderer@3.5.30(vue@3.5.30(typescript@5.9.3))':
     dependencies:
-      '@vue/compiler-ssr': 3.5.29
-      '@vue/shared': 3.5.29
-      vue: 3.5.29(typescript@5.9.3)
+      '@vue/compiler-ssr': 3.5.30
+      '@vue/shared': 3.5.30
+      vue: 3.5.30(typescript@5.9.3)
 
   '@vue/shared@3.5.27': {}
 
-  '@vue/shared@3.5.29': {}
+  '@vue/shared@3.5.30': {}
 
   '@vueuse/core@14.2.0(vue@3.5.27(typescript@5.9.3))':
     dependencies:
@@ -2931,7 +2958,7 @@ snapshots:
 
   consola@3.4.2: {}
 
-  conventional-changelog-angular@8.1.0:
+  conventional-changelog-angular@8.3.0:
     dependencies:
       compare-func: 2.0.0
 
@@ -2939,26 +2966,28 @@ snapshots:
     dependencies:
       compare-func: 2.0.0
 
-  conventional-changelog-conventionalcommits@9.1.0:
+  conventional-changelog-conventionalcommits@9.3.0:
     dependencies:
       compare-func: 2.0.0
 
   conventional-changelog-preset-loader@5.0.0: {}
 
-  conventional-changelog-writer@8.2.0:
+  conventional-changelog-writer@8.4.0:
     dependencies:
+      '@simple-libs/stream-utils': 1.2.0
       conventional-commits-filter: 5.0.0
       handlebars: 4.7.8
       meow: 13.2.0
-      semver: 7.7.3
+      semver: 7.7.4
 
-  conventional-changelog@7.1.1(conventional-commits-filter@5.0.0):
+  conventional-changelog@7.2.0(conventional-commits-filter@5.0.0):
     dependencies:
-      '@conventional-changelog/git-client': 2.5.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)
+      '@conventional-changelog/git-client': 2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)
+      '@simple-libs/hosted-git-info': 1.0.2
       '@types/normalize-package-data': 2.4.4
       conventional-changelog-preset-loader: 5.0.0
-      conventional-changelog-writer: 8.2.0
-      conventional-commits-parser: 6.2.0
+      conventional-changelog-writer: 8.4.0
+      conventional-commits-parser: 6.3.0
       fd-package-json: 2.0.0
       meow: 13.2.0
       normalize-package-data: 7.0.1
@@ -2971,9 +3000,14 @@ snapshots:
     dependencies:
       meow: 13.2.0
 
+  conventional-commits-parser@6.3.0:
+    dependencies:
+      '@simple-libs/stream-utils': 1.2.0
+      meow: 13.2.0
+
   conventional-recommended-bump@11.2.0:
     dependencies:
-      '@conventional-changelog/git-client': 2.5.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)
+      '@conventional-changelog/git-client': 2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)
       conventional-changelog-preset-loader: 5.0.0
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.2.0
@@ -3490,7 +3524,7 @@ snapshots:
   normalize-package-data@7.0.1:
     dependencies:
       hosted-git-info: 8.1.0
-      semver: 7.7.3
+      semver: 7.7.4
       validate-npm-package-license: 3.0.4
 
   normalize-path@3.0.0: {}
@@ -3633,6 +3667,12 @@ snapshots:
       pathe: 2.0.3
 
   postcss@8.5.6:
+    dependencies:
+      nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
+  postcss@8.5.8:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -3795,6 +3835,8 @@ snapshots:
   semver@7.7.2: {}
 
   semver@7.7.3: {}
+
+  semver@7.7.4: {}
 
   shebang-command@2.0.0:
     dependencies:
@@ -4001,7 +4043,7 @@ snapshots:
       jiti: 2.6.1
       yaml: 2.8.0
 
-  vitepress@2.0.0-alpha.16(@types/node@22.19.15)(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)(yaml@2.8.0):
+  vitepress@2.0.0-alpha.16(@types/node@22.19.15)(jiti@2.6.1)(postcss@8.5.8)(typescript@5.9.3)(yaml@2.8.0):
     dependencies:
       '@docsearch/css': 4.5.3
       '@docsearch/js': 4.5.3
@@ -4023,7 +4065,7 @@ snapshots:
       vite: 7.3.1(@types/node@22.19.15)(jiti@2.6.1)(yaml@2.8.0)
       vue: 3.5.27(typescript@5.9.3)
     optionalDependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
     transitivePeerDependencies:
       - '@types/node'
       - async-validator
@@ -4059,13 +4101,13 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  vue@3.5.29(typescript@5.9.3):
+  vue@3.5.30(typescript@5.9.3):
     dependencies:
-      '@vue/compiler-dom': 3.5.29
-      '@vue/compiler-sfc': 3.5.29
-      '@vue/runtime-dom': 3.5.29
-      '@vue/server-renderer': 3.5.29(vue@3.5.29(typescript@5.9.3))
-      '@vue/shared': 3.5.29
+      '@vue/compiler-dom': 3.5.30
+      '@vue/compiler-sfc': 3.5.30
+      '@vue/runtime-dom': 3.5.30
+      '@vue/server-renderer': 3.5.30(vue@3.5.30(typescript@5.9.3))
+      '@vue/shared': 3.5.30
     optionalDependencies:
       typescript: 5.9.3
 
