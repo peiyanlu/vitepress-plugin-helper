@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.0.2](https://github.com/peiyanlu/vitepress-plugin-helper/compare/0.0.1...0.0.2) (2026-03-22)
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update all non-major dependencies ([4697bab](https://github.com/peiyanlu/vitepress-plugin-helper/commit/4697babdc7fe9fa52ee54dba3d5af0af18637e36))
+* **deps:** update all non-major dependencies ([d74580e](https://github.com/peiyanlu/vitepress-plugin-helper/commit/d74580e4c75ea6a80404e750f2bd0d8ec9083dbe))
+* **deps:** update all non-major dependencies ([2ff9344](https://github.com/peiyanlu/vitepress-plugin-helper/commit/2ff9344c4f1d9eede16d3aa767054269bdf2cfb2))
+* **deps:** update all non-major dependencies ([30e595b](https://github.com/peiyanlu/vitepress-plugin-helper/commit/30e595b8343018a8a499d225c66b06401b50b80b))
+* **deps:** update dependency pnpm to v10.29.1 ([bbbc8b7](https://github.com/peiyanlu/vitepress-plugin-helper/commit/bbbc8b71b100b635e4b33565dae48d087514ec53))
+* **deps:** update dependency pnpm to v10.30.1 ([25dd0f5](https://github.com/peiyanlu/vitepress-plugin-helper/commit/25dd0f5e52e2251927b3c6ecf179dad7f0531bb9))
+* **deps:** update dependency pnpm to v10.32.1 ([b90382b](https://github.com/peiyanlu/vitepress-plugin-helper/commit/b90382b2e4a54dbc2d3268ee6990f0dd8c692fb1))
+* **deps:** update dependency vitepress to ^2.0.0-alpha.17 ([ee6193b](https://github.com/peiyanlu/vitepress-plugin-helper/commit/ee6193b1567cf13b5fa960f82180daa9eaded4c8))
+* **deps:** update github-actions-minor-patch ([5910c9c](https://github.com/peiyanlu/vitepress-plugin-helper/commit/5910c9c24d06dc1364d60a0e5094bd6bbf209c54))
+* **deps:** update github-actions-minor-patch ([1c7a85a](https://github.com/peiyanlu/vitepress-plugin-helper/commit/1c7a85a951391e7d3c8b1f90f1588009d9da8683))
+
 ## 0.0.1 (2026-02-02)
 
 ### 🎫 Chores | 其他更新
