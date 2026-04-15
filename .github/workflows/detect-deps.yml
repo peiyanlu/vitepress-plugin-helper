@@ -1,0 +1,66 @@
+name: Detect Deps
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - package.json
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+          ref: ${{ github.ref }}
+      
+      - name: Detect
+        run: |
+          DEPS=("vitepress")
+          TARGET_FILE="package.json"
+
+          if git rev-parse HEAD~1 >/dev/null 2>&1; then
+            OLD_COMMIT="HEAD~1"
+          else
+            OLD_COMMIT="HEAD"
+          fi
+
+          changed_list=()
+
+          echo "Target file: $TARGET_FILE"
+          echo "Comparing with: $OLD_COMMIT"
+
+          for dep in "${DEPS[@]}"; do
+            old_content=$(git show "$OLD_COMMIT":"$TARGET_FILE" 2>/dev/null || echo '{}')
+            old_version=$(echo "$old_content" | jq -r --arg dep "$dep" '.dependencies[$dep] // .devDependencies[$dep] // empty')
+            new_version=$(jq -r --arg dep "$dep" '.dependencies[$dep] // .devDependencies[$dep] // empty' "$TARGET_FILE")
+
+            echo "Checking $dep..."
+            echo "Old: $old_version"
+            echo "New: $new_version"
+
+            if [ "$old_version" != "$new_version" ]; then
+              echo "➡ $dep version changed!"
+              changed_list+=("$dep")
+            fi
+          done
+
+          if [ ${#changed_list[@]} -eq 0 ]; then
+            echo "No dependencies changed. Stopping workflow."
+            exit 1  # failure
+          fi
+          
+          echo "Changed dependencies: ${changed_list[*]}"
+          
+          echo "Dependencies changed. Starting next workflow."
+          exit 0  # success
