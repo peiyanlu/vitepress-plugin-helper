@@ -1,6 +1,6 @@
 import { DefaultTheme, defineConfig } from 'vitepress'
-import { VitePressHelperPlugin } from 'vitepress-plugin-helper'
-import { getNav, getSidebar } from './menu'
+import { vitePressHelperPlugin } from 'vitepress-plugin-helper'
+import { getNav, getSidebar } from './menu.js'
 
 
 // https://vitepress.dev/reference/site-config
@@ -20,7 +20,7 @@ export default defineConfig({
   },
   vite: {
     plugins: [
-      VitePressHelperPlugin(),
+      vitePressHelperPlugin(),
     ],
   },
 })
