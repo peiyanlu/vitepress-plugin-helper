@@ -6,21 +6,18 @@
   "type": "module",
   "author": "PeiYanlu",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.js"
-    }
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
   },
   "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc",
-    "prepublish": "tsc",
-    "release": "release-it",
+    "dev": "tsdown -w",
+    "build": "tsdown",
+    "prepublish": "tsdown",
+    "release": "release",
     "sync:vite": "node scripts/sync-vite-version.js"
   },
   "dependencies": {
@@ -28,12 +25,11 @@
     "gray-matter": "^4.0.3"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^10.0.2",
-    "@types/node": "^22.19.1",
-    "release-it": "^19.0.6",
-    "release-it-pnpm": "^4.6.6",
-    "typescript": "^5.9.3",
-    "vitepress": "^2.0.0-alpha.15"
+    "@peiyanlu/release": "^0.0.12",
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2",
+    "vitepress": "^2.0.0-alpha.17",
+    "tsdown": "^0.21.8"
   },
   "peerDependencies": {
     "vite": "^7.3.1"
