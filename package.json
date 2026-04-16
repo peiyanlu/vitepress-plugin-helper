@@ -46,9 +46,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
+    "dist"
   ],
   "keywords": [
     "vitepress",
@@ -56,8 +54,5 @@
     "sidebar",
     "nav",
     "auto"
-  ],
-  "pnpm": {
-    "neverBuiltDependencies": []
-  }
+  ]
 }
