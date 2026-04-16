@@ -3,6 +3,5 @@
 node_modules
 .vitepress/dist
 .vitepress/cache
-.turbo
 cache
 dist
