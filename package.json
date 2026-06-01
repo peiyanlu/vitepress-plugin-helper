@@ -17,8 +17,7 @@
     "dev": "tsdown -w",
     "build": "tsdown",
     "prepublish": "tsdown",
-    "release": "release",
-    "sync:vite": "node scripts/sync-vite-version.js"
+    "release": "release"
   },
   "dependencies": {
     "fast-glob": "^3.3.3",
@@ -26,13 +25,10 @@
   },
   "devDependencies": {
     "@peiyanlu/release": "^0.0.12",
-    "@types/node": "^25.6.0",
-    "typescript": "^6.0.2",
+    "@types/node": "^24.12.4",
+    "typescript": "^6.0.3",
     "vitepress": "^2.0.0-alpha.17",
-    "tsdown": "^0.21.8"
-  },
-  "peerDependencies": {
-    "vite": "^7.0.6"
+    "tsdown": "^0.22.1"
   },
   "repository": {
     "type": "git",
@@ -54,5 +50,8 @@
     "sidebar",
     "nav",
     "auto"
-  ]
+  ],
+  "engines": {
+    "node": ">=20"
+  }
 }

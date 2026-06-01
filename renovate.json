@@ -1,54 +1,45 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base",
-    "schedule:weekly",
-    "group:allNonMajor"
-  ],
-  "automerge": true,
-  "automergeType": "pr",
-  "automergeStrategy": "rebase",
-  "timezone": "Asia/Shanghai",
-  "labels": ["dependencies"],
-  "ignorePaths": [
-    "**/test/**",
-    "**/*-lock.*"
-  ],
-  "prConcurrentLimit": 0,
-  "prHourlyLimit": 0,
+  "extends": ["config:recommended"],
+  "automergeStrategy": "squash",
   "rangeStrategy": "bump",
+  "timezone": "Asia/Shanghai",
+  "labels": ["deps"],
+  "schedule": [
+    "* 0-3 1 * *",
+    "* 0-3 16 * *"
+  ],
+  "commitMessageAction": "升级",
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageExtra": "至 {{newVersion}}",
   "packageRules": [
     {
-      "matchDepTypes": ["devDependencies"],
-      "labels": ["devDeps"]
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "npm 依赖",
+      "groupSlug": "npm",
+      "automerge": true
     },
     {
-      "matchDepTypes": ["peerDependencies"],
-      "enabled": false
-    },
-    {
-      "matchUpdateTypes": ["major"],
-      "labels": ["major"],
-      "automerge": false
-    },
-    {
-      "matchDepNames": [],
-      "enabled": false
+      "matchManagers": ["github-actions"],
+      "groupName": "ci 依赖",
+      "groupSlug": "ci",
+      "automerge": true
     },
     {
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "github-actions-minor-patch",
-      "labels": ["github-actions", "minor-patch"],
-      "automerge": true
+      "enabled": false
     },
     {
-      "matchManagers": ["github-actions"],
-      "matchUpdateTypes": ["major"],
-      "groupName": "github-actions-major",
-      "labels": ["github-actions", "major"],
-      "automerge": true
+      "matchDepTypes": ["engines"],
+      "matchDepNames": ["node"],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": ["@types/node", "typescript"],
+      "enabled": false
     }
-  ],
-  "ignoreDeps": []
+  ]
 }

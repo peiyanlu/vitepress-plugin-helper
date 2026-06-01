@@ -45,15 +45,6 @@ jobs:
       - name: Install deps
         run: pnpm install --frozen-lockfile
       
-      - name: Sync vite version
-        run: pnpm sync:vite
-      
-      - name: Commit updated package.json
-        run: |
-          git add package.json pnpm-lock.yaml
-          git commit -m "chore: sync vite version with vitepress" || echo "No changes"
-          git push
-      
       - name: Build
         run: pnpm build
       
