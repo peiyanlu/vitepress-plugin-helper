@@ -5,6 +5,7 @@
   "rangeStrategy": "bump",
   "timezone": "Asia/Shanghai",
   "labels": ["deps"],
+  "minimumReleaseAge": "3 days",
   "schedule": [
     "* 0-3 1 * *",
     "* 0-3 16 * *"
@@ -12,6 +13,7 @@
   "commitMessageAction": "升级",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": "至 {{newVersion}}",
+  "groupSingleUpdates": false,
   "packageRules": [
     {
       "matchManagers": ["npm"],
