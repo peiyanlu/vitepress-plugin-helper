@@ -27,7 +27,7 @@
     "@peiyanlu/release": "^0.0.16",
     "@types/node": "^24.12.4",
     "typescript": "^6.0.3",
-    "vitepress": "^2.0.0-alpha.18",
+    "vitepress": "^2.0.0-alpha.19",
     "tsdown": "^0.22.14"
   },
   "repository": {
