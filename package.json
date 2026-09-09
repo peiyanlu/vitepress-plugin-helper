@@ -24,7 +24,7 @@
     "gray-matter": "^4.0.3"
   },
   "devDependencies": {
-    "@peiyanlu/release": "^0.0.16",
+    "@peiyanlu/release": "^1.3.1",
     "@types/node": "^24.12.4",
     "typescript": "^6.0.3",
     "vitepress": "^2.0.0-alpha.19",
